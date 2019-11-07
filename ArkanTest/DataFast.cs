@@ -18,8 +18,6 @@ namespace ArkanTest
             Lock.EnterWriteLock();
             try
             {
-                // Поскольку быстрая сортировка нам ещё понадобится, 
-                // вынесем данный метод уровнем выше.
                 int count = QuickSelectValues(set, result);
 
                 Count = count;

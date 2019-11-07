@@ -13,12 +13,14 @@ namespace ArkanTest
         {
             var old = Generate(1000000, 10000000, 0, 100000);
             var rem = Generate(1, 1000000, 0, 100000);
+            // Для теста DataCompact, потому что слишком уж долго.
             //var old = Generate(100000, 100000, 0, 100000);
             //var rem = Generate(1, 100000, 0, 100000);
             Console.WriteLine(Test(new DataLinq(), old, rem));
             Console.WriteLine(Test(new DataFast(), old, rem));            
             Console.WriteLine(Test(new DataParallel(), old, rem));
-            //Console.WriteLine(Test(new DataCompact(), old, rem));
+            //Console.WriteLine(Test(new DataCompact(), old, rem))
+            ;
             Console.ReadKey();
         }
 
