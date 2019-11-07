@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="DataCompact.cs" />
+    <Compile Include="DataFast.cs" />
+    <Compile Include="DataLinq.cs" />
+    <Compile Include="DataParallel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
